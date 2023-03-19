@@ -4,7 +4,7 @@
 
 ### 1 - Instalação:
 - Clone este repositório em sua máquina local usando o comando abaixo:
-    `git clone https://github.com/seu-usuario/nome-do-repositorio.git`
+    `git clone https://github.com/BrunoCastroM/Gerador-de-CPF.git`
 - Acesse o diretório do projeto:
     `cd nome-do-repositorio`
 - Instale as dependências do projeto:
