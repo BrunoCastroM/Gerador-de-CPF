@@ -1,43 +1,67 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
-    --primary-color: rgb(17, 86, 102);
-    --primary-color-darker: rgb(9, 48, 56);
+    --primary-color: #E6835C;
+    --primary-color-darker: #99411F;
+    --secundary--color: #5CE6CE;
+    --secundary--color-darker: #1F9985;
 }
 
 * {
     box-sizing: border-box;
     outline: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background: var(--primary-color);
-    font-family: 'Open sans', sans-serif;
-    font-size: 1.3em;
+    height: 100vh;
+    background: linear-gradient(to bottom, var(--secundary--color-darker),var(--secundary--color));
+    font-family: 'Roboto', sans-serif;
     line-height: 1.5em;
+    font-size: 1.2em;
 }
 
 .container {
-    max-width: 640px;
-    margin: 50px auto;
+    position: relative;
+    top: 8%;
+    display: flex;
+    flex-direction: column;
+    max-width: 540px;
+    margin: 0px auto;
     background: #fff;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 32px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
 }
 
 .container h1 {
     text-align: center;
-    margin-bottom: 40px;
-    color: var(--primary-color);
+    color: var(--primary-color-darker);
 }
 
 .cpf-gerado {
-    font-size: 2em;
-    color: var(--primary-color-darker);
+    font-size: 2.5em;
+    color: var(--primary-color);
     text-align: center;
     font-weight: bold;
-    margin-bottom: 40px;
+    margin-top: 56px;
+    margin-bottom: 42px;
     letter-spacing: 3px;
+}
+
+#gerar-cpf {
+    background-color: var(--primary-color-darker);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: none;
+    width: 30%;
+    transition: all .3s ease-in-out;
+}
+
+#gerar-cpf:hover {
+    background-color: var(--primary-color);
 }
